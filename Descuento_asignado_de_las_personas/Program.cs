@@ -11,29 +11,29 @@ namespace Descuento_asignado_de_las_personas
             // en esta parte se debe colocar los datos de la categoria
             Console.WriteLine("*** CATEGORIA ***");
             Console.WriteLine("ingrese la categoria");
-            int categoria = Convert.ToInt16(Console.ReadLine());
+            int categoria = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("*** PRODUCTO ***");
             Console.WriteLine("ingrese el producto");
-            int producto = Convert.ToInt16(Console.ReadLine());
+            int producto = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("*** PRECIO ***");
             Console.WriteLine("Ingrese el precio del producto");
-            int precio = Convert.ToInt16(Console.ReadLine());
+            int precio = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("*** TAMAÑO DEL PRODUCTO ***");
             Console.WriteLine("Ingrese el tamaño del producto");
             Console.WriteLine("1. Normal");
             Console.WriteLine("2. Medio");
             Console.WriteLine("3. Grande");
-            int tamaño = Convert.ToInt16(Console.ReadLine());
+            int tamaño = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("*** PRECIO DEL TAMAÑO");
             Console.WriteLine("Ingrese el precio segun tamaño");
             Console.WriteLine("1. Tamaño Normal");
             Console.WriteLine("2. 25% mas de normal");
             Console.WriteLine("3. 30% mas del medio");
-            int preciodeltamaño = Convert.ToInt16(Console.ReadLine());
+            int preciodeltamaño = Convert.ToInt32(Console.ReadLine());
 
             int total;
             total = precio + tamaño * preciodeltamaño;
