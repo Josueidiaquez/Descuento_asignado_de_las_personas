@@ -26,18 +26,18 @@ namespace Descuento_asignado_de_las_personas
             Console.WriteLine("1. Normal");
             Console.WriteLine("2. Medio");
             Console.WriteLine("3. Grande");
-            int tamaño = Convert.ToInt32(Console.ReadLine());
+            string tamaño = Console.ReadLine();
 
             Console.WriteLine("*** PRECIO DEL TAMAÑO");
             Console.WriteLine("Ingrese el precio segun tamaño");
             Console.WriteLine("1. Tamaño Normal");
             Console.WriteLine("2. 25% mas de normal");
             Console.WriteLine("3. 30% mas del medio");
-            int preciodeltamaño = Convert.ToInt32(Console.ReadLine());
+            string preciodeltamaño = Console.ReadLine();
 
-            int total;
-            total = precio + tamaño * preciodeltamaño;
-            Console.WriteLine("Total del producto: ", "{total}");
+            string total;
+            total = precio + tamaño + preciodeltamaño;
+            Console.WriteLine($"Total del producto: , {total}");
         }
     }
 }
